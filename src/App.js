@@ -1,23 +1,20 @@
 import './App.css';
-import Typewriter from "typewriter-effect";
+import Header from './header';
+import Homepage from './homepage';
+import ContactForm from './contactForm';
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <h1>This is Ahmet Ulutaş's Landing Page</h1>
-      <p className="type-writer">I'm a <Typewriter 
-    options={{
-    strings: ['Self-Taught Programmer', 'React Student' ,'English Teacher'],
-    autoStart: true,
-    loop: true,
-    delay:200,
-      }}
-      
-      /> </p>
-        
-      <p>Trying to learn React.js on my own. Got some cool projects. Contact me for bussiness cooperation.</p>
-      <p>Gonna publish my own landing page here soon.</p>
+    <div className="app">
+      <Router>
+      <Header />
+      <Routes>
+          <Route path="/" element={<Homepage />}/>
+          <Route path="/contact-form" element={<ContactForm />}/>
+      </Routes>
+      </Router>
     </div>
-  );
+);
 }
 
 export default App;

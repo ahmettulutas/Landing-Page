@@ -1,0 +1,11 @@
+article {
+    padding-left:2rem;
+    line-height:3ch;
+}
+.type-writer-aside {
+    display:flex;
+}
+#react {
+    font-style: italic;
+    color:var(--red-color)
+}
