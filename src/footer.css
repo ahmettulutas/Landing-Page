@@ -1,0 +1,27 @@
+footer {
+    display:flex;
+    justify-content:space-between;
+    padding:1rem;
+    background-color: var(--red-color);
+  }
+  nav {
+    display:flex;
+  }
+  .li {
+    padding:1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    color:black;
+    cursor:pointer;
+    animation-name: changecolor;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+  .li:focus,
+  .li:hover {
+    color:white;
+  }
+@keyframes changecolor {
+    from {color:black}
+    to {color:white}
+}
