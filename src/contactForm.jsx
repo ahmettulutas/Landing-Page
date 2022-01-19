@@ -47,6 +47,7 @@ export default function ContactForm() {
             type="text" 
             name="name"
             value={form.name}
+            required
             />
         </section>  
         <section className="input-section">
@@ -59,6 +60,7 @@ export default function ContactForm() {
             type="text" 
             name="surname"
             value={form.surname}
+            required
             />
         </section>            
         <section className="input-section">
@@ -71,6 +73,7 @@ export default function ContactForm() {
             type="email" 
             name="email"
             value={form.email}
+            required
             />
         </section>
         <section className="input-section">
@@ -82,6 +85,7 @@ export default function ContactForm() {
             id="message"
             name="message"
             value={form.message}
+            required
             />
         </section>
         <button id="submit-button" type="submit">
