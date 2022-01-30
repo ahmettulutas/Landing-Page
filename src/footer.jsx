@@ -7,7 +7,7 @@ const Footer = () => {
         <footer>
             <nav>
                 <ul>
-                    <a className="li" href="https://github.com/ahmettulutas">CHECK MY GITHUB</a>
+                    <a className="li" target="_blank" rel="noreferrer" href="https://github.com/ahmettulutas"> check my github</a>
                 </ul>
             </nav>
         </footer>
